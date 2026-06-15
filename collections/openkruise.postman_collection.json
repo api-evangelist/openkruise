@@ -1,0 +1,2040 @@
+{
+  "item": [
+    {
+      "id": "1c1ecfb0-6f8d-408d-81b5-bab5bb53a476",
+      "name": "List CloneSets across all namespaces",
+      "request": {
+        "name": "List CloneSets across all namespaces",
+        "description": {},
+        "url": {
+          "path": [
+            "apis",
+            "apps.kruise.io",
+            "v1alpha1",
+            "clonesets"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "description": "Kubernetes API server endpoint",
+              "type": "any",
+              "value": "{{kubernetesApiServer}}",
+              "key": "kubernetesApiServer"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "c39e58ca-24e5-4527-b14b-37c5c5e0b5a1",
+          "name": "CloneSet collection",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "apis",
+                "apps.kruise.io",
+                "v1alpha1",
+                "clonesets"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Kubernetes API server endpoint",
+                  "type": "any",
+                  "value": "{{kubernetesApiServer}}",
+                  "key": "kubernetesApiServer"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"apiVersion\": \"string\",\n  \"kind\": \"string\",\n  \"metadata\": {},\n  \"items\": [\n    {\n      \"apiVersion\": \"string\",\n      \"kind\": \"string\",\n      \"metadata\": {},\n      \"spec\": {},\n      \"status\": {}\n    },\n    {\n      \"apiVersion\": \"string\",\n      \"kind\": \"string\",\n      \"metadata\": {},\n      \"spec\": {},\n      \"status\": {}\n    }\n  ]\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "c4e1a336-7230-4f11-9d2d-3e4b351d8a27",
+      "name": "List CloneSets in a namespace",
+      "request": {
+        "name": "List CloneSets in a namespace",
+        "description": {},
+        "url": {
+          "path": [
+            "apis",
+            "apps.kruise.io",
+            "v1alpha1",
+            "namespaces",
+            ":namespace",
+            "clonesets"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "namespace",
+              "description": "(Required) Kubernetes namespace"
+            },
+            {
+              "description": "Kubernetes API server endpoint",
+              "type": "any",
+              "value": "{{kubernetesApiServer}}",
+              "key": "kubernetesApiServer"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "688857b3-1332-4b45-b461-912a59a923da",
+          "name": "CloneSet collection",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "apis",
+                "apps.kruise.io",
+                "v1alpha1",
+                "namespaces",
+                ":namespace",
+                "clonesets"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "namespace",
+                  "description": "(Required) Kubernetes namespace"
+                },
+                {
+                  "description": "Kubernetes API server endpoint",
+                  "type": "any",
+                  "value": "{{kubernetesApiServer}}",
+                  "key": "kubernetesApiServer"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"apiVersion\": \"string\",\n  \"kind\": \"string\",\n  \"metadata\": {},\n  \"items\": [\n    {\n      \"apiVersion\": \"string\",\n      \"kind\": \"string\",\n      \"metadata\": {},\n      \"spec\": {},\n      \"status\": {}\n    },\n    {\n      \"apiVersion\": \"string\",\n      \"kind\": \"string\",\n      \"metadata\": {},\n      \"spec\": {},\n      \"status\": {}\n    }\n  ]\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "4b0ffd41-99d2-4aa4-9c7b-8d01f9224b8e",
+      "name": "Create a CloneSet",
+      "request": {
+        "name": "Create a CloneSet",
+        "description": {},
+        "url": {
+          "path": [
+            "apis",
+            "apps.kruise.io",
+            "v1alpha1",
+            "namespaces",
+            ":namespace",
+            "clonesets"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "namespace",
+              "description": "(Required) Kubernetes namespace"
+            },
+            {
+              "description": "Kubernetes API server endpoint",
+              "type": "any",
+              "value": "{{kubernetesApiServer}}",
+              "key": "kubernetesApiServer"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "auth": null,
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"apiVersion\": \"<string>\",\n  \"kind\": \"<string>\",\n  \"metadata\": \"<object>\",\n  \"spec\": \"<object>\",\n  \"status\": \"<object>\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": [
+        {
+          "id": "1a796b48-510c-4a44-a56f-40b5e3dcbaab",
+          "name": "CloneSet created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "apis",
+                "apps.kruise.io",
+                "v1alpha1",
+                "namespaces",
+                ":namespace",
+                "clonesets"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "namespace",
+                  "description": "(Required) Kubernetes namespace"
+                },
+                {
+                  "description": "Kubernetes API server endpoint",
+                  "type": "any",
+                  "value": "{{kubernetesApiServer}}",
+                  "key": "kubernetesApiServer"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"apiVersion\": \"<string>\",\n  \"kind\": \"<string>\",\n  \"metadata\": \"<object>\",\n  \"spec\": \"<object>\",\n  \"status\": \"<object>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"apiVersion\": \"string\",\n  \"kind\": \"string\",\n  \"metadata\": {},\n  \"spec\": {},\n  \"status\": {}\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "cd248bb9-be49-40d2-9c1f-0045d0cf9bd6",
+      "name": "Get a CloneSet",
+      "request": {
+        "name": "Get a CloneSet",
+        "description": {},
+        "url": {
+          "path": [
+            "apis",
+            "apps.kruise.io",
+            "v1alpha1",
+            "namespaces",
+            ":namespace",
+            "clonesets",
+            ":name"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "namespace",
+              "description": "(Required) Kubernetes namespace"
+            },
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "name",
+              "description": "(Required) Resource name"
+            },
+            {
+              "description": "Kubernetes API server endpoint",
+              "type": "any",
+              "value": "{{kubernetesApiServer}}",
+              "key": "kubernetesApiServer"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "7641c1e1-7703-4abf-b0d8-a5eb8ddedf5f",
+          "name": "CloneSet resource",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "apis",
+                "apps.kruise.io",
+                "v1alpha1",
+                "namespaces",
+                ":namespace",
+                "clonesets",
+                ":name"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "namespace",
+                  "description": "(Required) Kubernetes namespace"
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "name",
+                  "description": "(Required) Resource name"
+                },
+                {
+                  "description": "Kubernetes API server endpoint",
+                  "type": "any",
+                  "value": "{{kubernetesApiServer}}",
+                  "key": "kubernetesApiServer"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"apiVersion\": \"string\",\n  \"kind\": \"string\",\n  \"metadata\": {},\n  \"spec\": {},\n  \"status\": {}\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "022ec26f-518b-4e43-b66d-6fc4a63b2b5a",
+      "name": "Delete a CloneSet",
+      "request": {
+        "name": "Delete a CloneSet",
+        "description": {},
+        "url": {
+          "path": [
+            "apis",
+            "apps.kruise.io",
+            "v1alpha1",
+            "namespaces",
+            ":namespace",
+            "clonesets",
+            ":name"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "namespace",
+              "description": "(Required) Kubernetes namespace"
+            },
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "name",
+              "description": "(Required) Resource name"
+            },
+            {
+              "description": "Kubernetes API server endpoint",
+              "type": "any",
+              "value": "{{kubernetesApiServer}}",
+              "key": "kubernetesApiServer"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "dbc2385f-04ef-479b-acdc-37ba103992c5",
+          "name": "CloneSet deleted",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "apis",
+                "apps.kruise.io",
+                "v1alpha1",
+                "namespaces",
+                ":namespace",
+                "clonesets",
+                ":name"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "namespace",
+                  "description": "(Required) Kubernetes namespace"
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "name",
+                  "description": "(Required) Resource name"
+                },
+                {
+                  "description": "Kubernetes API server endpoint",
+                  "type": "any",
+                  "value": "{{kubernetesApiServer}}",
+                  "key": "kubernetesApiServer"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              }
+            ],
+            "method": "DELETE",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "436516c1-92a3-4e3e-a2da-e1f46f723409",
+      "name": "List Advanced StatefulSets in a namespace",
+      "request": {
+        "name": "List Advanced StatefulSets in a namespace",
+        "description": {},
+        "url": {
+          "path": [
+            "apis",
+            "apps.kruise.io",
+            "v1beta1",
+            "namespaces",
+            ":namespace",
+            "statefulsets"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "namespace",
+              "description": "(Required) Kubernetes namespace"
+            },
+            {
+              "description": "Kubernetes API server endpoint",
+              "type": "any",
+              "value": "{{kubernetesApiServer}}",
+              "key": "kubernetesApiServer"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "423d8f55-d224-485f-989f-9239b58c00a2",
+          "name": "Advanced StatefulSet collection",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "apis",
+                "apps.kruise.io",
+                "v1beta1",
+                "namespaces",
+                ":namespace",
+                "statefulsets"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "namespace",
+                  "description": "(Required) Kubernetes namespace"
+                },
+                {
+                  "description": "Kubernetes API server endpoint",
+                  "type": "any",
+                  "value": "{{kubernetesApiServer}}",
+                  "key": "kubernetesApiServer"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"apiVersion\": \"string\",\n  \"kind\": \"string\",\n  \"metadata\": {},\n  \"items\": [\n    {\n      \"apiVersion\": \"string\",\n      \"kind\": \"string\",\n      \"metadata\": {},\n      \"spec\": {},\n      \"status\": {}\n    },\n    {\n      \"apiVersion\": \"string\",\n      \"kind\": \"string\",\n      \"metadata\": {},\n      \"spec\": {},\n      \"status\": {}\n    }\n  ]\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "d99deed2-c28f-4b7b-8944-be22d9c4b22b",
+      "name": "Create an Advanced StatefulSet",
+      "request": {
+        "name": "Create an Advanced StatefulSet",
+        "description": {},
+        "url": {
+          "path": [
+            "apis",
+            "apps.kruise.io",
+            "v1beta1",
+            "namespaces",
+            ":namespace",
+            "statefulsets"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "namespace",
+              "description": "(Required) Kubernetes namespace"
+            },
+            {
+              "description": "Kubernetes API server endpoint",
+              "type": "any",
+              "value": "{{kubernetesApiServer}}",
+              "key": "kubernetesApiServer"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "auth": null,
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"apiVersion\": \"<string>\",\n  \"kind\": \"<string>\",\n  \"metadata\": \"<object>\",\n  \"spec\": \"<object>\",\n  \"status\": \"<object>\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": [
+        {
+          "id": "08fa827c-138b-4db4-bf21-497690dd2f68",
+          "name": "Advanced StatefulSet created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "apis",
+                "apps.kruise.io",
+                "v1beta1",
+                "namespaces",
+                ":namespace",
+                "statefulsets"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "namespace",
+                  "description": "(Required) Kubernetes namespace"
+                },
+                {
+                  "description": "Kubernetes API server endpoint",
+                  "type": "any",
+                  "value": "{{kubernetesApiServer}}",
+                  "key": "kubernetesApiServer"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"apiVersion\": \"<string>\",\n  \"kind\": \"<string>\",\n  \"metadata\": \"<object>\",\n  \"spec\": \"<object>\",\n  \"status\": \"<object>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"apiVersion\": \"string\",\n  \"kind\": \"string\",\n  \"metadata\": {},\n  \"spec\": {},\n  \"status\": {}\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "f6107669-411f-441f-b321-7336140752c1",
+      "name": "Get an Advanced StatefulSet",
+      "request": {
+        "name": "Get an Advanced StatefulSet",
+        "description": {},
+        "url": {
+          "path": [
+            "apis",
+            "apps.kruise.io",
+            "v1beta1",
+            "namespaces",
+            ":namespace",
+            "statefulsets",
+            ":name"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "namespace",
+              "description": "(Required) Kubernetes namespace"
+            },
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "name",
+              "description": "(Required) Resource name"
+            },
+            {
+              "description": "Kubernetes API server endpoint",
+              "type": "any",
+              "value": "{{kubernetesApiServer}}",
+              "key": "kubernetesApiServer"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "1474edc5-8fa5-44fb-ad8f-aa9e364a1921",
+          "name": "Advanced StatefulSet resource",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "apis",
+                "apps.kruise.io",
+                "v1beta1",
+                "namespaces",
+                ":namespace",
+                "statefulsets",
+                ":name"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "namespace",
+                  "description": "(Required) Kubernetes namespace"
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "name",
+                  "description": "(Required) Resource name"
+                },
+                {
+                  "description": "Kubernetes API server endpoint",
+                  "type": "any",
+                  "value": "{{kubernetesApiServer}}",
+                  "key": "kubernetesApiServer"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"apiVersion\": \"string\",\n  \"kind\": \"string\",\n  \"metadata\": {},\n  \"spec\": {},\n  \"status\": {}\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "f7b3edb8-9455-4462-91b7-8609c2a91f24",
+      "name": "Delete an Advanced StatefulSet",
+      "request": {
+        "name": "Delete an Advanced StatefulSet",
+        "description": {},
+        "url": {
+          "path": [
+            "apis",
+            "apps.kruise.io",
+            "v1beta1",
+            "namespaces",
+            ":namespace",
+            "statefulsets",
+            ":name"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "namespace",
+              "description": "(Required) Kubernetes namespace"
+            },
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "name",
+              "description": "(Required) Resource name"
+            },
+            {
+              "description": "Kubernetes API server endpoint",
+              "type": "any",
+              "value": "{{kubernetesApiServer}}",
+              "key": "kubernetesApiServer"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "013650e3-81e1-4360-8cac-2e83ae595c23",
+          "name": "Advanced StatefulSet deleted",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "apis",
+                "apps.kruise.io",
+                "v1beta1",
+                "namespaces",
+                ":namespace",
+                "statefulsets",
+                ":name"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "namespace",
+                  "description": "(Required) Kubernetes namespace"
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "name",
+                  "description": "(Required) Resource name"
+                },
+                {
+                  "description": "Kubernetes API server endpoint",
+                  "type": "any",
+                  "value": "{{kubernetesApiServer}}",
+                  "key": "kubernetesApiServer"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              }
+            ],
+            "method": "DELETE",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "8e733c3e-7a1c-4e75-aebb-63946586c116",
+      "name": "List Advanced DaemonSets in a namespace",
+      "request": {
+        "name": "List Advanced DaemonSets in a namespace",
+        "description": {},
+        "url": {
+          "path": [
+            "apis",
+            "apps.kruise.io",
+            "v1alpha1",
+            "namespaces",
+            ":namespace",
+            "daemonsets"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "namespace",
+              "description": "(Required) Kubernetes namespace"
+            },
+            {
+              "description": "Kubernetes API server endpoint",
+              "type": "any",
+              "value": "{{kubernetesApiServer}}",
+              "key": "kubernetesApiServer"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "26c05f48-d859-42be-a8c4-6c9feaf08bb3",
+          "name": "Advanced DaemonSet collection",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "apis",
+                "apps.kruise.io",
+                "v1alpha1",
+                "namespaces",
+                ":namespace",
+                "daemonsets"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "namespace",
+                  "description": "(Required) Kubernetes namespace"
+                },
+                {
+                  "description": "Kubernetes API server endpoint",
+                  "type": "any",
+                  "value": "{{kubernetesApiServer}}",
+                  "key": "kubernetesApiServer"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"apiVersion\": \"string\",\n  \"kind\": \"string\",\n  \"metadata\": {},\n  \"items\": [\n    {\n      \"apiVersion\": \"string\",\n      \"kind\": \"string\",\n      \"metadata\": {},\n      \"spec\": {},\n      \"status\": {}\n    },\n    {\n      \"apiVersion\": \"string\",\n      \"kind\": \"string\",\n      \"metadata\": {},\n      \"spec\": {},\n      \"status\": {}\n    }\n  ]\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "a4f705d0-fabc-4c5b-9cba-5462113402f2",
+      "name": "Create an Advanced DaemonSet",
+      "request": {
+        "name": "Create an Advanced DaemonSet",
+        "description": {},
+        "url": {
+          "path": [
+            "apis",
+            "apps.kruise.io",
+            "v1alpha1",
+            "namespaces",
+            ":namespace",
+            "daemonsets"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "namespace",
+              "description": "(Required) Kubernetes namespace"
+            },
+            {
+              "description": "Kubernetes API server endpoint",
+              "type": "any",
+              "value": "{{kubernetesApiServer}}",
+              "key": "kubernetesApiServer"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "auth": null,
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"apiVersion\": \"<string>\",\n  \"kind\": \"<string>\",\n  \"metadata\": \"<object>\",\n  \"spec\": \"<object>\",\n  \"status\": \"<object>\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": [
+        {
+          "id": "ecf4eb12-6ae5-4e75-8d0b-7287949f2c60",
+          "name": "Advanced DaemonSet created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "apis",
+                "apps.kruise.io",
+                "v1alpha1",
+                "namespaces",
+                ":namespace",
+                "daemonsets"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "namespace",
+                  "description": "(Required) Kubernetes namespace"
+                },
+                {
+                  "description": "Kubernetes API server endpoint",
+                  "type": "any",
+                  "value": "{{kubernetesApiServer}}",
+                  "key": "kubernetesApiServer"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"apiVersion\": \"<string>\",\n  \"kind\": \"<string>\",\n  \"metadata\": \"<object>\",\n  \"spec\": \"<object>\",\n  \"status\": \"<object>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"apiVersion\": \"string\",\n  \"kind\": \"string\",\n  \"metadata\": {},\n  \"spec\": {},\n  \"status\": {}\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "03bfa14f-a202-4fc6-ad04-57eb22e7d398",
+      "name": "List SidecarSets (cluster-scoped)",
+      "request": {
+        "name": "List SidecarSets (cluster-scoped)",
+        "description": {},
+        "url": {
+          "path": [
+            "apis",
+            "apps.kruise.io",
+            "v1alpha1",
+            "sidecarsets"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "description": "Kubernetes API server endpoint",
+              "type": "any",
+              "value": "{{kubernetesApiServer}}",
+              "key": "kubernetesApiServer"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "92863982-0c38-4714-b016-d989a245fd7d",
+          "name": "SidecarSet collection",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "apis",
+                "apps.kruise.io",
+                "v1alpha1",
+                "sidecarsets"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Kubernetes API server endpoint",
+                  "type": "any",
+                  "value": "{{kubernetesApiServer}}",
+                  "key": "kubernetesApiServer"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"apiVersion\": \"string\",\n  \"kind\": \"string\",\n  \"metadata\": {},\n  \"items\": [\n    {\n      \"apiVersion\": \"string\",\n      \"kind\": \"string\",\n      \"metadata\": {},\n      \"spec\": {},\n      \"status\": {}\n    },\n    {\n      \"apiVersion\": \"string\",\n      \"kind\": \"string\",\n      \"metadata\": {},\n      \"spec\": {},\n      \"status\": {}\n    }\n  ]\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "9bfa2c51-6c1d-4708-893a-6f418c36c907",
+      "name": "Create a SidecarSet",
+      "request": {
+        "name": "Create a SidecarSet",
+        "description": {},
+        "url": {
+          "path": [
+            "apis",
+            "apps.kruise.io",
+            "v1alpha1",
+            "sidecarsets"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "description": "Kubernetes API server endpoint",
+              "type": "any",
+              "value": "{{kubernetesApiServer}}",
+              "key": "kubernetesApiServer"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "auth": null,
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"apiVersion\": \"<string>\",\n  \"kind\": \"<string>\",\n  \"metadata\": \"<object>\",\n  \"spec\": \"<object>\",\n  \"status\": \"<object>\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": [
+        {
+          "id": "b206e334-5259-4a70-b8b5-d43572b0a55a",
+          "name": "SidecarSet created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "apis",
+                "apps.kruise.io",
+                "v1alpha1",
+                "sidecarsets"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Kubernetes API server endpoint",
+                  "type": "any",
+                  "value": "{{kubernetesApiServer}}",
+                  "key": "kubernetesApiServer"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"apiVersion\": \"<string>\",\n  \"kind\": \"<string>\",\n  \"metadata\": \"<object>\",\n  \"spec\": \"<object>\",\n  \"status\": \"<object>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"apiVersion\": \"string\",\n  \"kind\": \"string\",\n  \"metadata\": {},\n  \"spec\": {},\n  \"status\": {}\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "0e61de10-75c0-4c1c-8aa3-62c9927e5a19",
+      "name": "List BroadcastJobs in a namespace",
+      "request": {
+        "name": "List BroadcastJobs in a namespace",
+        "description": {},
+        "url": {
+          "path": [
+            "apis",
+            "apps.kruise.io",
+            "v1alpha1",
+            "namespaces",
+            ":namespace",
+            "broadcastjobs"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "namespace",
+              "description": "(Required) Kubernetes namespace"
+            },
+            {
+              "description": "Kubernetes API server endpoint",
+              "type": "any",
+              "value": "{{kubernetesApiServer}}",
+              "key": "kubernetesApiServer"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "9864408d-6100-42ca-918c-7c424b0fca5e",
+          "name": "BroadcastJob collection",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "apis",
+                "apps.kruise.io",
+                "v1alpha1",
+                "namespaces",
+                ":namespace",
+                "broadcastjobs"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "namespace",
+                  "description": "(Required) Kubernetes namespace"
+                },
+                {
+                  "description": "Kubernetes API server endpoint",
+                  "type": "any",
+                  "value": "{{kubernetesApiServer}}",
+                  "key": "kubernetesApiServer"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"apiVersion\": \"string\",\n  \"kind\": \"string\",\n  \"metadata\": {},\n  \"items\": [\n    {\n      \"apiVersion\": \"string\",\n      \"kind\": \"string\",\n      \"metadata\": {},\n      \"spec\": {},\n      \"status\": {}\n    },\n    {\n      \"apiVersion\": \"string\",\n      \"kind\": \"string\",\n      \"metadata\": {},\n      \"spec\": {},\n      \"status\": {}\n    }\n  ]\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "75323cb7-8599-4c21-8b9b-41817a6a9909",
+      "name": "Create a BroadcastJob",
+      "request": {
+        "name": "Create a BroadcastJob",
+        "description": {},
+        "url": {
+          "path": [
+            "apis",
+            "apps.kruise.io",
+            "v1alpha1",
+            "namespaces",
+            ":namespace",
+            "broadcastjobs"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "namespace",
+              "description": "(Required) Kubernetes namespace"
+            },
+            {
+              "description": "Kubernetes API server endpoint",
+              "type": "any",
+              "value": "{{kubernetesApiServer}}",
+              "key": "kubernetesApiServer"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "auth": null,
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"apiVersion\": \"<string>\",\n  \"kind\": \"<string>\",\n  \"metadata\": \"<object>\",\n  \"spec\": \"<object>\",\n  \"status\": \"<object>\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": [
+        {
+          "id": "ec790e93-47e8-4814-a16a-96182af0ddf0",
+          "name": "BroadcastJob created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "apis",
+                "apps.kruise.io",
+                "v1alpha1",
+                "namespaces",
+                ":namespace",
+                "broadcastjobs"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "namespace",
+                  "description": "(Required) Kubernetes namespace"
+                },
+                {
+                  "description": "Kubernetes API server endpoint",
+                  "type": "any",
+                  "value": "{{kubernetesApiServer}}",
+                  "key": "kubernetesApiServer"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"apiVersion\": \"<string>\",\n  \"kind\": \"<string>\",\n  \"metadata\": \"<object>\",\n  \"spec\": \"<object>\",\n  \"status\": \"<object>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"apiVersion\": \"string\",\n  \"kind\": \"string\",\n  \"metadata\": {},\n  \"spec\": {},\n  \"status\": {}\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "cfd2bcff-c5f3-41ea-b09c-3d702bf371b2",
+      "name": "List ImagePullJobs (cluster-scoped)",
+      "request": {
+        "name": "List ImagePullJobs (cluster-scoped)",
+        "description": {},
+        "url": {
+          "path": [
+            "apis",
+            "apps.kruise.io",
+            "v1alpha1",
+            "imagepulljobs"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "description": "Kubernetes API server endpoint",
+              "type": "any",
+              "value": "{{kubernetesApiServer}}",
+              "key": "kubernetesApiServer"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "82bd8f13-7757-4f72-81ba-6403294309d5",
+          "name": "ImagePullJob collection",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "apis",
+                "apps.kruise.io",
+                "v1alpha1",
+                "imagepulljobs"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Kubernetes API server endpoint",
+                  "type": "any",
+                  "value": "{{kubernetesApiServer}}",
+                  "key": "kubernetesApiServer"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"apiVersion\": \"string\",\n  \"kind\": \"string\",\n  \"metadata\": {},\n  \"items\": [\n    {\n      \"apiVersion\": \"string\",\n      \"kind\": \"string\",\n      \"metadata\": {},\n      \"spec\": {},\n      \"status\": {}\n    },\n    {\n      \"apiVersion\": \"string\",\n      \"kind\": \"string\",\n      \"metadata\": {},\n      \"spec\": {},\n      \"status\": {}\n    }\n  ]\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "f43cee02-3a06-4210-9f97-c28a2e4345cd",
+      "name": "Create an ImagePullJob",
+      "request": {
+        "name": "Create an ImagePullJob",
+        "description": {},
+        "url": {
+          "path": [
+            "apis",
+            "apps.kruise.io",
+            "v1alpha1",
+            "imagepulljobs"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "description": "Kubernetes API server endpoint",
+              "type": "any",
+              "value": "{{kubernetesApiServer}}",
+              "key": "kubernetesApiServer"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "POST",
+        "auth": null,
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"apiVersion\": \"<string>\",\n  \"kind\": \"<string>\",\n  \"metadata\": \"<object>\",\n  \"spec\": \"<object>\",\n  \"status\": \"<object>\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "response": [
+        {
+          "id": "1bb1d4bf-c60c-421c-91c8-09e2768e770b",
+          "name": "ImagePullJob created",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "apis",
+                "apps.kruise.io",
+                "v1alpha1",
+                "imagepulljobs"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Kubernetes API server endpoint",
+                  "type": "any",
+                  "value": "{{kubernetesApiServer}}",
+                  "key": "kubernetesApiServer"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: bearer",
+                  "type": "text/plain"
+                },
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"apiVersion\": \"<string>\",\n  \"kind\": \"<string>\",\n  \"metadata\": \"<object>\",\n  \"spec\": \"<object>\",\n  \"status\": \"<object>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{\n  \"apiVersion\": \"string\",\n  \"kind\": \"string\",\n  \"metadata\": {},\n  \"spec\": {},\n  \"status\": {}\n}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Kubernetes API server endpoint",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "kubernetes.default.svc",
+      "key": "kubernetesApiServer"
+    },
+    {
+      "type": "string",
+      "value": "https://{{kubernetesApiServer}}",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "35957c1e-29fa-4986-9713-4356ac9f335d",
+    "name": "OpenKruise Workload API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "OpenKruise extends Kubernetes with advanced workload controllers exposed as Custom Resource Definitions in the apps.kruise.io API group. This OpenAPI definition describes the canonical Kubernetes API server paths used to list, get, create, and delete the primary OpenKruise workload resources, including CloneSet, Advanced StatefulSet, Advanced DaemonSet, SidecarSet, BroadcastJob, and ImagePullJob. Resources are addressed through the standard Kubernetes API server and follow the namespaced and cluster-scoped path conventions for custom resources. Authentication and authorization are delegated to the Kubernetes API server (bearer token, client certificate, or OIDC) and are not OpenKruise-specific.\n\nContact Support:\n Name: OpenKruise Documentation",
+      "type": "text/plain"
+    }
+  }
+}

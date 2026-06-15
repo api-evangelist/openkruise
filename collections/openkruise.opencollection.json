@@ -1,0 +1,347 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "OpenKruise Workload API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "List CloneSets across all namespaces",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://{kubernetesApiServer}/apis/apps.kruise.io/v1alpha1/clonesets"
+      },
+      "docs": "List CloneSets across all namespaces"
+    },
+    {
+      "info": {
+        "name": "List CloneSets in a namespace",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://{kubernetesApiServer}/apis/apps.kruise.io/v1alpha1/namespaces/:namespace/clonesets",
+        "params": [
+          {
+            "name": "namespace",
+            "value": "",
+            "type": "path",
+            "description": "Kubernetes namespace"
+          }
+        ]
+      },
+      "docs": "List CloneSets in a namespace"
+    },
+    {
+      "info": {
+        "name": "Create a CloneSet",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://{kubernetesApiServer}/apis/apps.kruise.io/v1alpha1/namespaces/:namespace/clonesets",
+        "params": [
+          {
+            "name": "namespace",
+            "value": "",
+            "type": "path",
+            "description": "Kubernetes namespace"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create a CloneSet"
+    },
+    {
+      "info": {
+        "name": "Get a CloneSet",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://{kubernetesApiServer}/apis/apps.kruise.io/v1alpha1/namespaces/:namespace/clonesets/:name",
+        "params": [
+          {
+            "name": "namespace",
+            "value": "",
+            "type": "path",
+            "description": "Kubernetes namespace"
+          },
+          {
+            "name": "name",
+            "value": "",
+            "type": "path",
+            "description": "Resource name"
+          }
+        ]
+      },
+      "docs": "Get a CloneSet"
+    },
+    {
+      "info": {
+        "name": "Delete a CloneSet",
+        "type": "http"
+      },
+      "http": {
+        "method": "DELETE",
+        "url": "https://{kubernetesApiServer}/apis/apps.kruise.io/v1alpha1/namespaces/:namespace/clonesets/:name",
+        "params": [
+          {
+            "name": "namespace",
+            "value": "",
+            "type": "path",
+            "description": "Kubernetes namespace"
+          },
+          {
+            "name": "name",
+            "value": "",
+            "type": "path",
+            "description": "Resource name"
+          }
+        ]
+      },
+      "docs": "Delete a CloneSet"
+    },
+    {
+      "info": {
+        "name": "List Advanced StatefulSets in a namespace",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://{kubernetesApiServer}/apis/apps.kruise.io/v1beta1/namespaces/:namespace/statefulsets",
+        "params": [
+          {
+            "name": "namespace",
+            "value": "",
+            "type": "path",
+            "description": "Kubernetes namespace"
+          }
+        ]
+      },
+      "docs": "List Advanced StatefulSets in a namespace"
+    },
+    {
+      "info": {
+        "name": "Create an Advanced StatefulSet",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://{kubernetesApiServer}/apis/apps.kruise.io/v1beta1/namespaces/:namespace/statefulsets",
+        "params": [
+          {
+            "name": "namespace",
+            "value": "",
+            "type": "path",
+            "description": "Kubernetes namespace"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create an Advanced StatefulSet"
+    },
+    {
+      "info": {
+        "name": "Get an Advanced StatefulSet",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://{kubernetesApiServer}/apis/apps.kruise.io/v1beta1/namespaces/:namespace/statefulsets/:name",
+        "params": [
+          {
+            "name": "namespace",
+            "value": "",
+            "type": "path",
+            "description": "Kubernetes namespace"
+          },
+          {
+            "name": "name",
+            "value": "",
+            "type": "path",
+            "description": "Resource name"
+          }
+        ]
+      },
+      "docs": "Get an Advanced StatefulSet"
+    },
+    {
+      "info": {
+        "name": "Delete an Advanced StatefulSet",
+        "type": "http"
+      },
+      "http": {
+        "method": "DELETE",
+        "url": "https://{kubernetesApiServer}/apis/apps.kruise.io/v1beta1/namespaces/:namespace/statefulsets/:name",
+        "params": [
+          {
+            "name": "namespace",
+            "value": "",
+            "type": "path",
+            "description": "Kubernetes namespace"
+          },
+          {
+            "name": "name",
+            "value": "",
+            "type": "path",
+            "description": "Resource name"
+          }
+        ]
+      },
+      "docs": "Delete an Advanced StatefulSet"
+    },
+    {
+      "info": {
+        "name": "List Advanced DaemonSets in a namespace",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://{kubernetesApiServer}/apis/apps.kruise.io/v1alpha1/namespaces/:namespace/daemonsets",
+        "params": [
+          {
+            "name": "namespace",
+            "value": "",
+            "type": "path",
+            "description": "Kubernetes namespace"
+          }
+        ]
+      },
+      "docs": "List Advanced DaemonSets in a namespace"
+    },
+    {
+      "info": {
+        "name": "Create an Advanced DaemonSet",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://{kubernetesApiServer}/apis/apps.kruise.io/v1alpha1/namespaces/:namespace/daemonsets",
+        "params": [
+          {
+            "name": "namespace",
+            "value": "",
+            "type": "path",
+            "description": "Kubernetes namespace"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create an Advanced DaemonSet"
+    },
+    {
+      "info": {
+        "name": "List SidecarSets (cluster-scoped)",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://{kubernetesApiServer}/apis/apps.kruise.io/v1alpha1/sidecarsets"
+      },
+      "docs": "List SidecarSets (cluster-scoped)"
+    },
+    {
+      "info": {
+        "name": "Create a SidecarSet",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://{kubernetesApiServer}/apis/apps.kruise.io/v1alpha1/sidecarsets",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create a SidecarSet"
+    },
+    {
+      "info": {
+        "name": "List BroadcastJobs in a namespace",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://{kubernetesApiServer}/apis/apps.kruise.io/v1alpha1/namespaces/:namespace/broadcastjobs",
+        "params": [
+          {
+            "name": "namespace",
+            "value": "",
+            "type": "path",
+            "description": "Kubernetes namespace"
+          }
+        ]
+      },
+      "docs": "List BroadcastJobs in a namespace"
+    },
+    {
+      "info": {
+        "name": "Create a BroadcastJob",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://{kubernetesApiServer}/apis/apps.kruise.io/v1alpha1/namespaces/:namespace/broadcastjobs",
+        "params": [
+          {
+            "name": "namespace",
+            "value": "",
+            "type": "path",
+            "description": "Kubernetes namespace"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create a BroadcastJob"
+    },
+    {
+      "info": {
+        "name": "List ImagePullJobs (cluster-scoped)",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://{kubernetesApiServer}/apis/apps.kruise.io/v1alpha1/imagepulljobs"
+      },
+      "docs": "List ImagePullJobs (cluster-scoped)"
+    },
+    {
+      "info": {
+        "name": "Create an ImagePullJob",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://{kubernetesApiServer}/apis/apps.kruise.io/v1alpha1/imagepulljobs",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create an ImagePullJob"
+    }
+  ],
+  "bundled": true
+}
