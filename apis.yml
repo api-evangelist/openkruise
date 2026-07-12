@@ -51,6 +51,10 @@ apis:
       - type: GitHubRepository
         url: https://github.com/openkruise/kruise
 common:
+  - type: DomainSecurity
+    url: security/openkruise-domain-security.yml
+  - type: Authentication
+    url: authentication/openkruise-authentication.yml
   - type: Documentation
     name: OpenKruise Documentation
     description: Official OpenKruise documentation.
@@ -62,6 +66,8 @@ common:
     name: OpenKruise GitHub
     description: Source code repository.
     url: https://github.com/openkruise
+  - url: https://openkruise.io/blog/rss.xml
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

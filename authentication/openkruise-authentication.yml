@@ -1,0 +1,13 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/openkruise-openapi.yml
+summary:
+  types:
+  - http
+schemes:
+- name: BearerToken
+  type: http
+  scheme: bearer
+  description: Kubernetes service account or user bearer token presented to the API server.
+  sources:
+  - openapi/openkruise-openapi.yml
