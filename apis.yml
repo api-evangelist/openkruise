@@ -51,6 +51,8 @@ apis:
       - type: GitHubRepository
         url: https://github.com/openkruise/kruise
 common:
+  - type: AgenticAccess
+    url: agentic-access/openkruise-agentic-access.yml
   - type: DomainSecurity
     url: security/openkruise-domain-security.yml
   - type: Authentication
