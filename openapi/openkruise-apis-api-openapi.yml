@@ -1,55 +1,51 @@
 openapi: 3.1.0
 info:
-  title: OpenKruise Workload API
-  description: >-
-    OpenKruise extends Kubernetes with advanced workload controllers exposed as
-    Custom Resource Definitions in the apps.kruise.io API group. This OpenAPI
-    definition describes the canonical Kubernetes API server paths used to list,
-    get, create, and delete the primary OpenKruise workload resources, including
-    CloneSet, Advanced StatefulSet, Advanced DaemonSet, SidecarSet,
-    BroadcastJob, and ImagePullJob. Resources are addressed through the standard
-    Kubernetes API server and follow the namespaced and cluster-scoped path
-    conventions for custom resources. Authentication and authorization are
-    delegated to the Kubernetes API server (bearer token, client certificate,
-    or OIDC) and are not OpenKruise-specific.
-  version: "1.0.0"
+  title: OpenKruise Workload Apis API
+  description: OpenKruise extends Kubernetes with advanced workload controllers exposed as Custom Resource Definitions in the apps.kruise.io API group. This OpenAPI definition describes the canonical Kubernetes API server paths used to list, get, create, and delete the primary OpenKruise workload resources, including CloneSet, Advanced StatefulSet, Advanced DaemonSet, SidecarSet, BroadcastJob, and ImagePullJob. Resources are addressed through the standard Kubernetes API server and follow the namespaced and cluster-scoped path conventions for custom resources. Authentication and authorization are delegated to the Kubernetes API server (bearer token, client certificate, or OIDC) and are not OpenKruise-specific.
+  version: 1.0.0
   contact:
     name: OpenKruise Documentation
     url: https://openkruise.io/docs/
 servers:
-  - url: https://{kubernetesApiServer}
-    description: Kubernetes API server hosting OpenKruise CRDs
-    variables:
-      kubernetesApiServer:
-        default: kubernetes.default.svc
-        description: Kubernetes API server endpoint
+- url: https://{kubernetesApiServer}
+  description: Kubernetes API server hosting OpenKruise CRDs
+  variables:
+    kubernetesApiServer:
+      default: kubernetes.default.svc
+      description: Kubernetes API server endpoint
 security:
-  - BearerToken: []
+- BearerToken: []
+tags:
+- name: Apis
 paths:
   /apis/apps.kruise.io/v1alpha1/clonesets:
     get:
       summary: List CloneSets across all namespaces
       operationId: listClonesetsAllNamespaces
       responses:
-        "200":
+        '200':
           description: CloneSet collection
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/KubernetesList'
+      tags:
+      - Apis
   /apis/apps.kruise.io/v1alpha1/namespaces/{namespace}/clonesets:
     parameters:
-      - $ref: '#/components/parameters/Namespace'
+    - $ref: '#/components/parameters/Namespace'
     get:
       summary: List CloneSets in a namespace
       operationId: listClonesets
       responses:
-        "200":
+        '200':
           description: CloneSet collection
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/KubernetesList'
+      tags:
+      - Apis
     post:
       summary: Create a CloneSet
       operationId: createCloneset
@@ -60,45 +56,53 @@ paths:
             schema:
               $ref: '#/components/schemas/KubernetesResource'
       responses:
-        "201":
+        '201':
           description: CloneSet created
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/KubernetesResource'
+      tags:
+      - Apis
   /apis/apps.kruise.io/v1alpha1/namespaces/{namespace}/clonesets/{name}:
     parameters:
-      - $ref: '#/components/parameters/Namespace'
-      - $ref: '#/components/parameters/Name'
+    - $ref: '#/components/parameters/Namespace'
+    - $ref: '#/components/parameters/Name'
     get:
       summary: Get a CloneSet
       operationId: getCloneset
       responses:
-        "200":
+        '200':
           description: CloneSet resource
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/KubernetesResource'
+      tags:
+      - Apis
     delete:
       summary: Delete a CloneSet
       operationId: deleteCloneset
       responses:
-        "200":
+        '200':
           description: CloneSet deleted
+      tags:
+      - Apis
   /apis/apps.kruise.io/v1beta1/namespaces/{namespace}/statefulsets:
     parameters:
-      - $ref: '#/components/parameters/Namespace'
+    - $ref: '#/components/parameters/Namespace'
     get:
       summary: List Advanced StatefulSets in a namespace
       operationId: listAdvancedStatefulSets
       responses:
-        "200":
+        '200':
           description: Advanced StatefulSet collection
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/KubernetesList'
+      tags:
+      - Apis
     post:
       summary: Create an Advanced StatefulSet
       operationId: createAdvancedStatefulSet
@@ -109,45 +113,53 @@ paths:
             schema:
               $ref: '#/components/schemas/KubernetesResource'
       responses:
-        "201":
+        '201':
           description: Advanced StatefulSet created
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/KubernetesResource'
+      tags:
+      - Apis
   /apis/apps.kruise.io/v1beta1/namespaces/{namespace}/statefulsets/{name}:
     parameters:
-      - $ref: '#/components/parameters/Namespace'
-      - $ref: '#/components/parameters/Name'
+    - $ref: '#/components/parameters/Namespace'
+    - $ref: '#/components/parameters/Name'
     get:
       summary: Get an Advanced StatefulSet
       operationId: getAdvancedStatefulSet
       responses:
-        "200":
+        '200':
           description: Advanced StatefulSet resource
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/KubernetesResource'
+      tags:
+      - Apis
     delete:
       summary: Delete an Advanced StatefulSet
       operationId: deleteAdvancedStatefulSet
       responses:
-        "200":
+        '200':
           description: Advanced StatefulSet deleted
+      tags:
+      - Apis
   /apis/apps.kruise.io/v1alpha1/namespaces/{namespace}/daemonsets:
     parameters:
-      - $ref: '#/components/parameters/Namespace'
+    - $ref: '#/components/parameters/Namespace'
     get:
       summary: List Advanced DaemonSets in a namespace
       operationId: listAdvancedDaemonSets
       responses:
-        "200":
+        '200':
           description: Advanced DaemonSet collection
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/KubernetesList'
+      tags:
+      - Apis
     post:
       summary: Create an Advanced DaemonSet
       operationId: createAdvancedDaemonSet
@@ -158,23 +170,27 @@ paths:
             schema:
               $ref: '#/components/schemas/KubernetesResource'
       responses:
-        "201":
+        '201':
           description: Advanced DaemonSet created
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/KubernetesResource'
+      tags:
+      - Apis
   /apis/apps.kruise.io/v1alpha1/sidecarsets:
     get:
       summary: List SidecarSets (cluster-scoped)
       operationId: listSidecarSets
       responses:
-        "200":
+        '200':
           description: SidecarSet collection
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/KubernetesList'
+      tags:
+      - Apis
     post:
       summary: Create a SidecarSet
       operationId: createSidecarSet
@@ -185,25 +201,29 @@ paths:
             schema:
               $ref: '#/components/schemas/KubernetesResource'
       responses:
-        "201":
+        '201':
           description: SidecarSet created
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/KubernetesResource'
+      tags:
+      - Apis
   /apis/apps.kruise.io/v1alpha1/namespaces/{namespace}/broadcastjobs:
     parameters:
-      - $ref: '#/components/parameters/Namespace'
+    - $ref: '#/components/parameters/Namespace'
     get:
       summary: List BroadcastJobs in a namespace
       operationId: listBroadcastJobs
       responses:
-        "200":
+        '200':
           description: BroadcastJob collection
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/KubernetesList'
+      tags:
+      - Apis
     post:
       summary: Create a BroadcastJob
       operationId: createBroadcastJob
@@ -214,23 +234,27 @@ paths:
             schema:
               $ref: '#/components/schemas/KubernetesResource'
       responses:
-        "201":
+        '201':
           description: BroadcastJob created
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/KubernetesResource'
+      tags:
+      - Apis
   /apis/apps.kruise.io/v1alpha1/imagepulljobs:
     get:
       summary: List ImagePullJobs (cluster-scoped)
       operationId: listImagePullJobs
       responses:
-        "200":
+        '200':
           description: ImagePullJob collection
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/KubernetesList'
+      tags:
+      - Apis
     post:
       summary: Create an ImagePullJob
       operationId: createImagePullJob
@@ -241,18 +265,44 @@ paths:
             schema:
               $ref: '#/components/schemas/KubernetesResource'
       responses:
-        "201":
+        '201':
           description: ImagePullJob created
           content:
             application/json:
               schema:
                 $ref: '#/components/schemas/KubernetesResource'
+      tags:
+      - Apis
 components:
-  securitySchemes:
-    BearerToken:
-      type: http
-      scheme: bearer
-      description: Kubernetes service account or user bearer token presented to the API server.
+  schemas:
+    KubernetesList:
+      type: object
+      description: Generic Kubernetes list of custom resources.
+      properties:
+        apiVersion:
+          type: string
+        kind:
+          type: string
+        metadata:
+          type: object
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/KubernetesResource'
+    KubernetesResource:
+      type: object
+      description: Generic Kubernetes custom resource document.
+      properties:
+        apiVersion:
+          type: string
+        kind:
+          type: string
+        metadata:
+          type: object
+        spec:
+          type: object
+        status:
+          type: object
   parameters:
     Namespace:
       name: namespace
@@ -268,32 +318,8 @@ components:
       description: Resource name
       schema:
         type: string
-  schemas:
-    KubernetesResource:
-      type: object
-      description: Generic Kubernetes custom resource document.
-      properties:
-        apiVersion:
-          type: string
-        kind:
-          type: string
-        metadata:
-          type: object
-        spec:
-          type: object
-        status:
-          type: object
-    KubernetesList:
-      type: object
-      description: Generic Kubernetes list of custom resources.
-      properties:
-        apiVersion:
-          type: string
-        kind:
-          type: string
-        metadata:
-          type: object
-        items:
-          type: array
-          items:
-            $ref: '#/components/schemas/KubernetesResource'
+  securitySchemes:
+    BearerToken:
+      type: http
+      scheme: bearer
+      description: Kubernetes service account or user bearer token presented to the API server.
