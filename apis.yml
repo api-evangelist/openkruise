@@ -27,6 +27,14 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/openkruise
 url: >-
   https://raw.githubusercontent.com/api-evangelist/openkruise/refs/heads/main/apis.yml
 tags:
+  - Cloud-Native
+  - Controllers
+  - Deployment
+  - Incubating
+  - Kubernetes
+  - Workload Management
+  - CRDs
+tags_raw:
   - Cloud Native
   - Controllers
   - Deployment
@@ -66,7 +74,8 @@ apis:
   description: The Apis API from OpenKruise — 9 operation(s) for apis.
   humanURL: https://openkruise.io/docs/
   baseURL: https://kubernetes.example.com/apis/apps.kruise.io/v1beta1
-  tags:
+  tags: []
+  tags_raw:
   - Apis
   properties:
   - type: OpenAPI
