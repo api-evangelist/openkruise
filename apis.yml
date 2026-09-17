@@ -84,12 +84,11 @@ apis:
   - type: GitHubRepository
     url: https://github.com/openkruise/kruise
 - aid: openkruise:openkruise-apis-api
-  name: OpenKruise Apis API
+  name: OpenKruise APIS API
   description: The Apis API from OpenKruise — 9 operation(s) for apis.
   humanURL: https://openkruise.io/docs/
   baseURL: https://kubernetes.example.com/apis/apps.kruise.io/v1beta1
-  tags: []
-  tags_raw:
+  tags:
   - Apis
   properties:
   - type: OpenAPI
