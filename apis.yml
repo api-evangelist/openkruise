@@ -42,7 +42,7 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/openkruise/refs/heads/main/apis.yml
 tags:
   - Cloud-Native
-  - Controllers
+  - Controller
   - Deployment
   - Incubating
   - Kubernetes
@@ -88,7 +88,8 @@ apis:
   description: The Apis API from OpenKruise — 9 operation(s) for apis.
   humanURL: https://openkruise.io/docs/
   baseURL: https://kubernetes.example.com/apis/apps.kruise.io/v1beta1
-  tags:
+  tags: []
+  tags_raw:
   - Apis
   properties:
   - type: OpenAPI
