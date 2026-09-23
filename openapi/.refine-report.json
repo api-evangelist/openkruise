@@ -1,14 +1,41 @@
 {
   "provider": "openkruise",
   "sources": [
-    "openkruise-apis-api-openapi.yml"
+    "_original/openkruise-openapi.yml"
   ],
   "outputs": [
     "openkruise-apis-api-openapi.yml"
   ],
-  "archived": [],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "openkruise-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "openkruise-openapi.yml: tagged paths GET /apis/apps.kruise.io/v1alpha1/clonesets -> Apis",
+    "openkruise-openapi.yml: tagged paths GET /apis/apps.kruise.io/v1alpha1/namespaces/{namespace}/clonesets -> Apis",
+    "openkruise-openapi.yml: tagged paths POST /apis/apps.kruise.io/v1alpha1/namespaces/{namespace}/clonesets -> Apis",
+    "openkruise-openapi.yml: tagged paths GET /apis/apps.kruise.io/v1alpha1/namespaces/{namespace}/clonesets/{name} -> Apis",
+    "openkruise-openapi.yml: tagged paths DELETE /apis/apps.kruise.io/v1alpha1/namespaces/{namespace}/clonesets/{name} -> Apis",
+    "openkruise-openapi.yml: tagged paths GET /apis/apps.kruise.io/v1beta1/namespaces/{namespace}/statefulsets -> Apis",
+    "openkruise-openapi.yml: tagged paths POST /apis/apps.kruise.io/v1beta1/namespaces/{namespace}/statefulsets -> Apis",
+    "openkruise-openapi.yml: tagged paths GET /apis/apps.kruise.io/v1beta1/namespaces/{namespace}/statefulsets/{name} -> Apis",
+    "openkruise-openapi.yml: tagged paths DELETE /apis/apps.kruise.io/v1beta1/namespaces/{namespace}/statefulsets/{name} -> Apis",
+    "openkruise-openapi.yml: tagged paths GET /apis/apps.kruise.io/v1alpha1/namespaces/{namespace}/daemonsets -> Apis",
+    "openkruise-openapi.yml: tagged paths POST /apis/apps.kruise.io/v1alpha1/namespaces/{namespace}/daemonsets -> Apis",
+    "openkruise-openapi.yml: tagged paths GET /apis/apps.kruise.io/v1alpha1/sidecarsets -> Apis",
+    "openkruise-openapi.yml: tagged paths POST /apis/apps.kruise.io/v1alpha1/sidecarsets -> Apis",
+    "openkruise-openapi.yml: tagged paths GET /apis/apps.kruise.io/v1alpha1/namespaces/{namespace}/broadcastjobs -> Apis",
+    "openkruise-openapi.yml: tagged paths POST /apis/apps.kruise.io/v1alpha1/namespaces/{namespace}/broadcastjobs -> Apis",
+    "openkruise-openapi.yml: tagged paths GET /apis/apps.kruise.io/v1alpha1/imagepulljobs -> Apis",
+    "openkruise-openapi.yml: tagged paths POST /apis/apps.kruise.io/v1alpha1/imagepulljobs -> Apis",
+    "openkruise-openapi.yml: declared missing tag: Apis",
+    "superseded outputs removed: openkruise-ap-is-api-openapi.yml",
+    "apis.yml register: written (+1 apis, 2 total)"
+  ],
+  "skipped": [
+    "openkruise-ap-is-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
