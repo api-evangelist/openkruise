@@ -6,9 +6,7 @@
   "outputs": [
     "openkruise-apis-api-openapi.yml"
   ],
-  "archived": [
-    "deleted 1 superseded output(s) from the previous generation"
-  ],
+  "archived": [],
   "errors": [],
   "warnings": [],
   "notes": [
@@ -32,10 +30,9 @@
     "openkruise-openapi.yml: tagged paths GET /apis/apps.kruise.io/v1alpha1/imagepulljobs -> Apis",
     "openkruise-openapi.yml: tagged paths POST /apis/apps.kruise.io/v1alpha1/imagepulljobs -> Apis",
     "openkruise-openapi.yml: declared missing tag: Apis",
-    "superseded outputs removed: openkruise-ap-is-api-openapi.yml",
-    "apis.yml register: written (+1 apis, 2 total)"
+    "apis.yml register: already-registered"
   ],
   "skipped": [
-    "openkruise-ap-is-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+    "openkruise-apis-api-openapi.yml: previously refined output, superseded by openapi/_original/"
   ]
 }

@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: OpenKruise Workload APIS API
+  title: OpenKruise Workload APIs API
   description: OpenKruise extends Kubernetes with advanced workload controllers exposed as Custom Resource Definitions in the apps.kruise.io API group.
   version: 1.0.0
   contact:
@@ -275,20 +275,6 @@ paths:
       - APIs
 components:
   schemas:
-    KubernetesResource:
-      type: object
-      description: Generic Kubernetes custom resource document.
-      properties:
-        apiVersion:
-          type: string
-        kind:
-          type: string
-        metadata:
-          type: object
-        spec:
-          type: object
-        status:
-          type: object
     KubernetesList:
       type: object
       description: Generic Kubernetes list of custom resources.
@@ -303,19 +289,33 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/KubernetesResource'
+    KubernetesResource:
+      type: object
+      description: Generic Kubernetes custom resource document.
+      properties:
+        apiVersion:
+          type: string
+        kind:
+          type: string
+        metadata:
+          type: object
+        spec:
+          type: object
+        status:
+          type: object
   parameters:
-    Namespace:
-      name: namespace
-      in: path
-      required: true
-      description: Kubernetes namespace
-      schema:
-        type: string
     Name:
       name: name
       in: path
       required: true
       description: Resource name
+      schema:
+        type: string
+    Namespace:
+      name: namespace
+      in: path
+      required: true
+      description: Kubernetes namespace
       schema:
         type: string
   securitySchemes:
