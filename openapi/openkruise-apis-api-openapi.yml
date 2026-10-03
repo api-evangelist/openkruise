@@ -274,35 +274,6 @@ paths:
       tags:
       - APIs
 components:
-  schemas:
-    KubernetesList:
-      type: object
-      description: Generic Kubernetes list of custom resources.
-      properties:
-        apiVersion:
-          type: string
-        kind:
-          type: string
-        metadata:
-          type: object
-        items:
-          type: array
-          items:
-            $ref: '#/components/schemas/KubernetesResource'
-    KubernetesResource:
-      type: object
-      description: Generic Kubernetes custom resource document.
-      properties:
-        apiVersion:
-          type: string
-        kind:
-          type: string
-        metadata:
-          type: object
-        spec:
-          type: object
-        status:
-          type: object
   parameters:
     Name:
       name: name
@@ -318,6 +289,35 @@ components:
       description: Kubernetes namespace
       schema:
         type: string
+  schemas:
+    KubernetesResource:
+      type: object
+      description: Generic Kubernetes custom resource document.
+      properties:
+        apiVersion:
+          type: string
+        kind:
+          type: string
+        metadata:
+          type: object
+        spec:
+          type: object
+        status:
+          type: object
+    KubernetesList:
+      type: object
+      description: Generic Kubernetes list of custom resources.
+      properties:
+        apiVersion:
+          type: string
+        kind:
+          type: string
+        metadata:
+          type: object
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/KubernetesResource'
   securitySchemes:
     BearerToken:
       type: http
