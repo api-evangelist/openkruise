@@ -1,4 +1,4 @@
-# OpenKruise (openkruise)
+# OpenKruise
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,60 +66,116 @@
 
 OpenKruise is a CNCF incubating project providing advanced workload management and deployment automation for Kubernetes. It extends Kubernetes with enhanced controllers including CloneSet for efficient stateless updates, Advanced StatefulSet with in-place updates, Advanced DaemonSet, SidecarSet for sidecar container management, BroadcastJob for node-level tasks, and ImagePullJob for pre-pulling container images.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/openkruise/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/openkruise/refs/heads/main/apis.yml)
+**Areas:** Cloud-Native · Controller · Deployment · Incubating · Kubernetes · Workload Management · CRDs
 
-## Scope
+## OpenKruise on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for OpenKruise is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/openkruise/](https://apis.io/providers/openkruise/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (2)
 
-- Cloud Native
-- Controllers
-- Deployment
-- Incubating
-- Kubernetes
-- Workload Management
-- CRDs
+- [OpenKruise Workload API](https://apis.io/apis/openkruise/openkruise-api/) — OpenKruise provides Kubernetes Custom Resource Definitions (CRDs) for advanced workload management. CloneSet offers efficient rolling updates with partition…
+- [OpenKruise APIS API](https://apis.io/apis/openkruise/openkruise-apis-api/) — The Apis API from OpenKruise — 9 operation(s) for apis.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-16
-- **Modified:** 2026-04-28
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### OpenKruise Workload API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-OpenKruise provides Kubernetes Custom Resource Definitions (CRDs) for advanced workload management. CloneSet offers efficient rolling updates with partition control, Advanced StatefulSet supports in-place container updates, Advanced DaemonSet provides surge and partitioned updates, SidecarSet manages sidecar containers across pods, BroadcastJob runs tasks on all nodes, and ImagePullJob pre-pulls images. Each controller extends standard Kubernetes capabilities with fine-grained deployment control through the apps.kruise.io/v1alpha1 and v1beta1 API groups.
+- [Openkruise Agentic Access](https://apis.io/agentic-access/openkruise/openkruise-agentic-access/)
 
-- **Human URL:** [https://openkruise.io/docs/](https://openkruise.io/docs/)
-- **Base URL:** `https://kubernetes.example.com/apis/apps.kruise.io/v1beta1`
+#### Collections (2)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Deployment
-- In-Place Updates
-- Workload Controllers
-- Kubernetes CRDs
+- [OpenKruise Workload API](https://apis.io/collections/openkruise/open-openkruise/)
+- [OpenKruise Workload Apis API](https://apis.io/collections/openkruise/open-openkruise-apis-api/)
 
-#### Properties
+#### Security (2)
 
-- [Documentation](https://openkruise.io/docs/)
-- [API Reference](https://openkruise.io/docs/reference/cloneset-api)
-- [GitHub Repository](https://github.com/openkruise/kruise)
-- [Postman Collection](collections/openkruise.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/openkruise.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Openkruise Authentication](https://apis.io/security/openkruise/openkruise-authentication/)
+- [Openkruise Domain Security](https://apis.io/security/openkruise/openkruise-domain-security/)
 
-- [Documentation](https://openkruise.io/docs/)
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Openkruise Plans Pricing](https://apis.io/plans/openkruise/openkruise-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Openkruise Rate Limits](https://apis.io/rate-limits/openkruise/openkruise-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Openkruise Finops](https://apis.io/finops/openkruise/openkruise-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://openkruise.io/)
-- [Git Hub Org](https://github.com/openkruise)
+- [Documentation](https://openkruise.io/docs/)
+- [Blog](https://openkruise.io/blog/rss.xml)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 25.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 42.2 |
+| Contract governance | 0.0 |
+| Operational transparency | 39.5 |
+| Developer ergonomics | 14.3 |
+| Access clarity | 7.9 |
+
+**Agent readiness 17.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/openkruise/](https://apis.io/providers/openkruise/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for OpenKruise: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/openkruise/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
